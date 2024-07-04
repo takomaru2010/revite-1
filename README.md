@@ -1,3 +1,11 @@
+# Forked this project to help for "tablet refugee"
+
+This repo can be confirmed that can work only Vercel.
+
+We have some issues and fixing.
+
+For help "tablet refugee", why don't you help this project?
+
 # Deprecation Notice
 
 This project is deprecated, however it still may receive maintenance updates.
