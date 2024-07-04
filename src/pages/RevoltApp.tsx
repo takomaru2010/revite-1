@@ -28,7 +28,7 @@ const AppContainer = styled.div`
     background-position: center center !important;
 `;
 
-export const StatusBar = styled.div`
+const StatusBar = styled.div`
     height: 40px;
     width: 100%;
     display: flex;
@@ -37,6 +37,7 @@ export const StatusBar = styled.div`
     font-size: 13px;
     //gap: 14px;
     gap: 8px;
+    white-space: nowrap;
 
     user-select: none;
 
@@ -228,3 +229,5 @@ export default function App() {
         </>
     );
 }
+
+export { StatusBar };
