@@ -1,7 +1,7 @@
 import { Twitter, Github, Mastodon } from "@styled-icons/boxicons-logos";
 import { observer } from "mobx-react-lite";
 import { Helmet } from "react-helmet";
-import { Link, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import styles from "./Login.module.scss";
 import { Text } from "preact-i18n";
@@ -12,7 +12,6 @@ import wideSVG from "/assets/wide.svg";
 
 import LocaleSelector from "../../components/common/LocaleSelector";
 import { Titlebar } from "../../components/native/Titlebar";
-import { useSystemAlert } from "../../updateWorker";
 import { StatusBar } from "../RevoltApp";
 import { FormCreate } from "./forms/FormCreate";
 import { FormLogin } from "./forms/FormLogin";
@@ -23,31 +22,26 @@ export default observer(() => {
     const state = useApplicationState();
     const theme = state.settings.theme;
 
-    const alert = useSystemAlert();
-
     return (
         <>
             {window.isNative && !window.native.getConfig().frame && (
                 <Titlebar overlay />
             )}
-            {alert && (
-                <StatusBar>
-                    <div className="title">{alert.text}</div>
-                    <div className="actions">
-                        {alert.actions?.map((action) =>
-                            action.type === "internal" ? null : action.type ===
-                              "external" ? (
-                                <a
-                                    href={action.href}
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <div className="button">{action.text}</div>{" "}
-                                </a>
-                            ) : null,
-                        )}
-                    </div>
-                </StatusBar>
-            )}
+            <StatusBar>
+                <div className="title">
+                    This is an unofficial fork of the Revolt client.
+                </div>
+                <div className="actions">
+                    <a
+                        href="https://github.com/jan-software-foundation/rolt.chat"
+                        target="_blank">
+                        <div className="button">Source Code</div>
+                    </a>
+                    <a href="https://revolt.chat" target="_blank">
+                        <div className="button">More Info</div>
+                    </a>
+                </div>
+            </StatusBar>
             <div className={styles.login}>
                 <Helmet>
                     <meta
@@ -99,20 +93,17 @@ export default observer(() => {
                             <div className={styles.socials}>
                                 <a
                                     href="https://github.com/revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
+                                    target="_blank" rel="noreferrer">
                                     <Github size={24} />
                                 </a>
                                 <a
                                     href="https://twitter.com/revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
+                                    target="_blank" rel="noreferrer">
                                     <Twitter size={24} />
                                 </a>
                                 <a
                                     href="https://mastodon.social/@revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
+                                    target="_blank" rel="noreferrer">
                                     <Mastodon size={24} />
                                 </a>
                             </div>
@@ -141,8 +132,7 @@ export default observer(() => {
                         <a
                             className={styles.attribution}
                             href="https://unsplash.com/@fakurian"
-                            target="_blank"
-                            rel="noreferrer">
+                            target="_blank" rel="noreferrer">
                             <Text id="general.image_by" /> &lrm;@fakurian &rlm;·
                             unsplash.com
                         </a>
