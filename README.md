@@ -1,3 +1,9 @@
+# 公式サイト
+
+非公式サイトは[こちら](https://revite.jf6deu.net/)です。
+
+非公式Twitterは[こちら](https://x.com/ForkRevite)です。
+
 # タブレット難民の皆様のために
 
 ...このreviteを作りました。
