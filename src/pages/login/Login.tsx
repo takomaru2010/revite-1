@@ -101,11 +101,7 @@ export default observer(() => {
                                     target="_blank" rel="noreferrer">
                                     <Twitter size={24} />
                                 </a>
-                                <a
-                                    href="https://mastodon.social/@revoltchat"
-                                    target="_blank" rel="noreferrer">
-                                    <Mastodon size={24} />
-                                </a>
+                                
                             </div>
                             <div className={styles.bullet} />
                             <div className={styles.revolt}>
