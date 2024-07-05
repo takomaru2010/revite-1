@@ -97,7 +97,7 @@ export default observer(() => {
                                     <Github size={24} />
                                 </a>
                                 <a
-                                    href="https://twitter.com/revoltchat"
+                                    href="https://x.com/ForkRevite"
                                     target="_blank" rel="noreferrer">
                                     <Twitter size={24} />
                                 </a>
