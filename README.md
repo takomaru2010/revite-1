@@ -6,6 +6,10 @@ We have some issues and fixing.
 
 For help "tablet refugee", why don't you help this project?
 
+If you using I-filter in your school, Please read [this](https://tnsk.ie-t.net/index.php?id=72) article.
+
+*NOTE this article is Japanese only.
+
 # Deprecation Notice
 
 This project is deprecated, however it still may receive maintenance updates.
