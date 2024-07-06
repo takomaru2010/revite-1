@@ -101,6 +101,11 @@ export default observer(() => {
                                     target="_blank" rel="noreferrer">
                                     <Twitter size={24} />
                                 </a>
+                                 <a
+                                    href="http://revite.jf6deu.net/"
+                                    target="_blank" rel="noreferrer">
+                                    <Twitter size={24} />
+                                </a>
                                 
                             </div>
                             <div className={styles.bullet} />
