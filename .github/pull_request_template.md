@@ -1,7 +1,6 @@
-## Please make sure to check the following tasks before opening and submitting a PR
+## プルリクエストを送る前に以下の事項を確認してください。
 
-* [ ] I understand and have followed the [contribution guide](https://github.com/revoltchat/revolt/discussions/282)
-* [ ] I have tested my changes locally and they are working as intended
-* [ ] These changes do not have any notable side effects on other Revolt projects
-* [ ] (optional) I have opened a pull request on [the translation repository](https://github.com/revoltchat/translations)
-* [ ] I have included screenshots to demonstrate my changes
+* [ ] 変更をローカル環境で試しました。また、変更は意図した通りに機能しました。
+* [ ] これらの変更はrevite非公式リポジトリに目立った副作用をもたらしません。
+* [ ] 変更点を示すためにスクリーンショットを添付しました。
+* [ ] プルリクエストが承認されない場合があることを理解しました。
