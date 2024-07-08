@@ -14,15 +14,6 @@ body:
       description: 直前の動作も含めてください。
     validations:
       required: true
-  - type: dropdown
-    id: branch
-    attributes:
-      label: ブランチ
-      description: どのブランチを使用していましたか?
-      options:
-        - master
-        validations:
-      required: true
   - type: textarea
     id: commit-hash
     attributes:
