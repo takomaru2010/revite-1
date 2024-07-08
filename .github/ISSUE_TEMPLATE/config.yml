@@ -1,7 +1,4 @@
 contact_links:
-  - name: Lounge Chat
-    url: https://rvlt.gg/Testers
-    about: Ask questions and discuss with others.
-  - name: Discussions
-    url: https://github.com/orgs/revoltchat/discussions
-    about: For larger feature requests and general question & answer.
+  - name: 非公式サイトの質疑応答
+    url: https://revite.jf6deu.net/?id=2
+    about: 質疑応答はこちらでお受けします。
