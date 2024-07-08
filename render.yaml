@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: revite-1
+    env: vite
+    region: Oregon
+    plan: free
+    buildCommand: "yarn install"
