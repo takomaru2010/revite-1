@@ -4,6 +4,12 @@
 
 非公式Twitterは[こちら](https://x.com/ForkRevite)です。
 
+# renderでの作成方法
+
+基本的にはYuki Youtubeと変わりません。
+
+[こちら](http://render.com/deploy?repo=https://github.com/JF6DEU/revite-1/)をクリックすると自動的に作成されます。(事前にrenderアカウントの登録が必要)
+
 # タブレット難民の皆様のために
 
 ...このreviteを作りました。
