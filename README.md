@@ -4,11 +4,17 @@
 
 非公式Twitterは[こちら](https://x.com/ForkRevite)です。
 
+ついに[こんなもの](https://revite-urls.onrender.com/)を作ってみました。
+
+ソースは[こちら](https://github.com/JF6DEU/revite-urls)です。(スパゲッティコードに注意)
+
 # renderでの作成方法
 
 基本的にはYuki Youtubeと変わりません。
 
 [こちら](http://render.com/deploy?repo=https://github.com/JF6DEU/revite-1/)をクリックすると自動的に作成されます。(事前にrenderアカウントの登録が必要)
+
+**URL集の**render用URLは[こちら](http://render.com/deploy?repo=https://github.com/JF6DEU/revite-urls/)です。(お間違えの無いように)
 
 # タブレット難民の皆様のために
 
