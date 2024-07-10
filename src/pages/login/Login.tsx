@@ -33,7 +33,7 @@ export default observer(() => {
                 </div>
                 <div className="actions">
                     <a
-                        href="https://github.com/jan-software-foundation/rolt.chat"
+                        href="https://github.com/JF6DEU/revite-1"
                         target="_blank">
                         <div className="button">Source Code</div>
                     </a>
