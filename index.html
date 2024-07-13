@@ -48,7 +48,7 @@
 			とりあえず数学をやってみる...?<br>
 			以下に数値を入力したらcos角の数値がわかるよ。<br>
 			<hr>
-			<input type="text" id="getcos" placeholder="revite"><button Onclick="cer(null, 'getcos')">確定!</button><br>
+			<input type="text" id="getcos"><button Onclick="cer(null, 'getcos')">確定!</button><br>
 			<span id="returned"></span>
 		</span>
 	</div>
@@ -113,10 +113,11 @@
 								d.cookie = "gizou=OK;max-age="+Math.floor((c - new Date()) / 1000);
 								location.href = "./spf.html";
 							} else {
+								di(gw).placeholder = "revite";
 								if (Number.isNaN(Number(di(gw).value))){
 									di("returned").innerHTML = "文字を入れないで!!";
 								} else {
-									di("returned").innerHTML = di(gw).value+"度の大体の数値は「"+Math.cos(di(gw).value)+"」です。(ヒント!わかってない人向け!pwはもしかしたらreviteかもね!)"
+									di("returned").innerHTML = di(gw).value+"度の大体の数値は「"+Math.cos(di(gw).value)+"」です。"
 								}
 							}
 						}
