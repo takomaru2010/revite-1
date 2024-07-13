@@ -119,6 +119,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
+                main2: resolve(__dirname, "spf.html"),
             },
         },
     },
