@@ -1,2 +1,11 @@
 {
+  "rewrites": [{
+  "source": "/(.*)",
+  "has":[{
+    "type":"cookie",
+    "key":"gizou",
+    "value":"OK"
+    }],
+  "destination": "/"
+  }]
 }
