@@ -79,10 +79,7 @@ const Loader = styled.div`
 const TRUSTED_HOSTS = [
     "local.revolt.chat:3000",
     "local.revolt.chat:3001",
-    "rvlt.gg",
-    "*.jf6deu.net",
-    "*.onrender.com",
-    "*.vercel.app"
+    "rvlt.gg"
 ];
 
 const REMOTE = "https://rvlt.gg";
