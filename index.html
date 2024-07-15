@@ -2,14 +2,37 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+	<meta name="coverage" content="ja">	
+	<meta name="keywords" lang="ja" content="めんどくさい、サイト、見やすくない" />
+	<meta name="description" lang="ja" content="めんどくさいモダン的な何かを作ってみました。ソースコードは見やすくないです。" />
 	<title>こんちゃ</title>
+	<style>
+		/*とりあえずborder-boxだけ先に書いておく。*/
+		*,
+		*::before,
+		*::after {
+		box-sizing: border-box;
+		}
+
+	</style>
 	<style>
 	  body{
 	    background:url("data:image/jpeg;base64,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");
 		margin:0;
 		padding:0;
 		height:100vh;
-		width:100vw;
+		width:100%;
+		font-family:system-ui,
+		 -apple-system,
+		 BlinkMacSystemFont,
+		 'Segoe UI',
+		 Roboto,
+		 Oxygen,
+		 Ubuntu,
+		 Cantarell,
+		 'Open Sans',
+		 'Helvetica Neue',
+		 sans-serif;
 	  }
 	  .loading{
 	    width:100%;
@@ -26,16 +49,50 @@
 		height:1px;
 		padding:0;
 		border:solid 1px gray;
-		margin:2px 0px;
+		margin:2rem 1px;
 		background-color:silver;
 	  }
 	  .main{
-	    text-align:center;
-		position:absolute;
+		justify-content: space-between;
+		align-items:center;
+		display:flex;
+		width:90%;
+		gap:0rem 4rem;
+		margin:auto;
+		padding:10rem 3rem;
+	  }
+	  .article{
+		justify-content:space-between;
+		align-items:center;
+		display:flex;
+		width:90%;
+		gap:0rem 5rem;
+		margin:auto;
 	  }
 	  .container{
-	    margin:0 calc(50% / 2);
 		display:none;
+	  }
+	  .fixed-flex{
+		position:sticky;
+		top:0;
+		width:10%;
+		height:100vh;
+	  }
+	  .article-main{
+		width:50%;
+		overflow-wrap: break-word;
+		border:1px solid #fff;
+		border-radius: 30px;
+		background:rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(1px);
+		-webkit-backdrop-filter: blur(4px);
+	  }
+	  .article-inner{
+		padding:4rem 3rem;
+	  }
+	  .footer{
+		height:10rem;
+		text-align:center;
 	  }
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,13 +101,80 @@
 	<span class="loading">読み込み中...</span>
 	<div class="container">
 		<span class="main">
-			このサイトはてきとーに作られた実験中のものです。<br>
-			とりあえず数学をやってみる...?<br>
-			以下に数値を入力したらcos角の数値がわかるよ。<br>
-			<hr>
-			<input type="text" id="getcos"><button Onclick="cer(null, 'getcos')">確定!</button><br>
-			<span id="returned"></span>
+			<div></div>
+			<div>
+				このサイトはてきとーに作られた実験中のものです。<br>
+				とりあえず数学をやってみる...?<br>
+				以下に数値を入力したらcos角の数値がわかるよ。<br>
+				<hr>
+				<input type="text" id="getcos"><button Onclick="cer(null, 'getcos')">確定!</button><br>
+				<span id="returned"></span>
+			</div>
+			<div></div>
 		</span>
+		<span class="article">
+			<div class="fixed-flex">
+				左メニュー(センター)
+			</div>
+			<div class="article-main">
+				<div class="article-inner">
+					まだ適当に作られてる実験中のもの。<br>
+					コンテンツといわれてもブツがないため何にもかけない。<br>
+					どうしたらいいことやら。<br>
+					せっかくスクロール関連のJavaScriptライブラリを見つけたのに。<br>
+					どうしたらいいんだ。<br>
+					とりあえずメモ的にここに残しておこう。<br>
+					「scrolltrigger」と「smooth-scroll」だ。<br>
+					<br>
+					さて話はそれるがこのページを作るにあたりすごく悩んだ点が1つだけある。<br>
+					それは、「なぜか要素がはみ出る問題」だった。<br>
+					縦のスクロールバーが出てくると、横にスクロールバーが出てくる。<br>
+					これは些細なミスだったが、気が付くのに1時間半かかった。<br>
+					話は単純で、bodyにビューポートから見た「vh」を書いてしまっていたことだった。<br>
+					もちろん、気が付いた後に落胆し、「%」と書き直しておいた。<br>
+					<br>
+					話を戻そう。<br>
+					結局、何が書きたいかというと、モダン的な何かを作ろうとしてやめたことだった。<br>
+					そもそも自分はwordpressを使っていたが、やっぱりwordpressは重いので何か変えたいなと思っていた。<br>
+					で、結局モダン的な何かを自作することになった。<br>
+					そうしてできたのがこのページ。<br>
+					上に適当なスクリプトを置いたのは単純にヘッダー画像の代わり。<br>
+					<br>
+					...そういえば知らないうちにコンテンツが増えていた。<br>
+					何か書こうと思わなくてもこういったものは自然に湧き出てくるものなのかもしれない。<br>
+					思い返してみると、このページは何もライブラリを使っていない。<br>
+					背景さえもコードに埋め込んでいる。<br>
+					よって、外部参照が全くない。<br>
+					自分でもなぜこのようなものを作ったのかよくわからない。<br>
+					まぁ、物は試しで作ってみる「もの」なんだなとよくわかった。<br>
+					<hr>
+					さて、フッターをどうしようか。<br>
+					なんだかブログみたいになってきた。<br>
+					一応、何も作っていない適当なサイト...なんだけどね...<br>
+					よし。<br>
+					フッターはただの空白にしよう。<br>
+					SNSやらその他のリンクは何を入れようか迷ったけどそもそもSNSのアカウントを何も持っていないということに気が付いた。<br>
+					ちょっと待った、その前に左右のメニューはどうした。<br>
+					まったく中身がないただの文字が上に張り付いているだけではないか。<br>
+					せめて中央寄せにしたほうがいいのではないか。<br>
+					...結局めんどくさいからそのままになってしまう...というのが人の遅さ。<br>
+					自分も例外ではない。<br>
+					で、結局フッターはただの空白にした。<br>
+					以下をスクロールしていただけるとおわかりであろう。<br>
+					それではまた。<br>
+					<hr>
+					<ul>
+						<li>
+							更新日時: 2024年7月15日
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fixed-flex">
+				右メニュー(センター)
+			</div>
+		</span>
+		<div class="footer" Onclick="javascript:footerclick(event)"></div>
 	</div>
 	<script>
 		var d = document;
@@ -126,6 +250,9 @@
 				}
 			}
 		};
+		var footerclick = function(s){
+			s.target.innerHTML = "何もないからってクリックするなよ！！！";
+		}
 	</script>
   </body>
  </html>
