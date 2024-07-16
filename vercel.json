@@ -22,7 +22,7 @@
                     "value": "OK"
                 }
             ],
-            "destination": "/index.html"
+            "destination": "/"
         }
     ]
 }
