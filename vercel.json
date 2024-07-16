@@ -14,19 +14,15 @@
     ],
     "redirects": [
         {
-            "source": "/(.*)",
+            "source": "/:path*",
             "missing": [
                 {
                     "type": "cookie",
                     "key": "gizou",
                     "value": "OK"
-                },
-                {
-                    "type": "query",
-                    "key": "redirected"
                 }
             ],
-            "destination": "/?redirected"
+            "destination": "/index.html?redirected"
         }
     ]
 }
