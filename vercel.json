@@ -1,11 +1,28 @@
 {
-  "rewrites": [{
-  "source": "/(.*)",
-  "has":[{
-    "type":"cookie",
-    "key":"gizou",
-    "value":"OK"
-    }],
-  "destination": "/spf.html"
-  }]
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "cookie",
+                    "key": "gizou",
+                    "value": "OK"
+                }
+            ],
+            "destination": "/spf.html"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "missing": [
+                {
+                    "type": "cookie",
+                    "key": "gizou",
+                    "value": "OK"
+                }
+            ],
+            "destination": "/index.html?redirected"
+        }
+    ]
 }
