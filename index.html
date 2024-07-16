@@ -94,12 +94,20 @@
 		height:10rem;
 		text-align:center;
 	  }
+	  .redirected-check{
+		position:absolute;
+		top:10%;
+		left:5%;
+		font-size:1.5rem;
+		font-weight: bold;
+	  }
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 	<span class="loading">読み込み中...</span>
 	<div class="container">
+		<div class="redirected-check"></div>
 		<span class="main">
 			<div></div>
 			<div>
@@ -196,8 +204,8 @@
 					clearInterval(k);
 				}
 			}, 10);
+			redirectcheck("redirected-check");
 		};
-		load();
 		var config = function(p){
 			var k = new Object();
 			function m(u,i = null,s = null){
@@ -253,6 +261,13 @@
 		var footerclick = function(s){
 			s.target.innerHTML = "何もないからってクリックするなよ！！！";
 		}
+		var redirectcheck = (r) => {
+			//ここだけアロー関数にしたかった自分がいた
+			if (location.href.split("redirected").length === 2){
+				document.getElementsByClassName(r)[0].innerHTML = "もう一度認証してください。";
+			}
+		};
+		load();
 	</script>
   </body>
  </html>
