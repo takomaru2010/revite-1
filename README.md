@@ -4,6 +4,8 @@
 
 非公式Twitterは[こちら](https://x.com/ForkRevite)です。
 
+非公式reviteサーバーは[こちら](https://rvlt.gg/1rv7cyC9)です。
+
 ついに[こんなもの](https://revite-urls.onrender.com/)を作ってみました。
 
 ソースは[こちら](https://github.com/JF6DEU/revite-urls)です。(スパゲッティコードに注意)
